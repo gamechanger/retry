@@ -2,6 +2,8 @@
 
 Retries an Action step on failure or timeout. This is currently intended to replace the `run` step for moody commands.
 
+**NOTE:** Ownership of this project was transferred to my personal account `nick-fields` from my work account `nick-invision`. Details [here](#Ownership)
+
 ---
 
 ## Inputs
@@ -204,7 +206,7 @@ with:
 
 ```yaml
 name: Multi-line multi-command Test
-uses: nick-fields/retry@v3
+uses: ./
 with:
   timeout_minutes: 1
   max_attempts: 2
@@ -217,7 +219,7 @@ with:
 
 ```yaml
 name: Multi-line single-command Test
-uses: nick-fields/retry@v3
+uses: ./
 with:
   timeout_minutes: 1
   max_attempts: 2
@@ -237,4 +239,4 @@ NodeJS is required for this action to run. This runs without issue on all GitHub
 
 As of 2022/02/15 ownership of this project has been transferred to my personal account `nick-fields` from my work account `nick-invision` due to me leaving InVision. I am the author and have been the primary maintainer since day one and will continue to maintain this as needed.
 
-Existing workflow references to `nick-invision/retry@<whatever>` must be updated to `nick-fields/retry@<whatever>`.
+Existing workflow references to `nick-invision/retry@<whatever>` no longer work and must be updated to `nick-fields/retry@<whatever>`.
